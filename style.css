@@ -1,0 +1,578 @@
+nav{
+    height: 13vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(174, 35, 45);
+
+}
+
+#logo{
+    width: 15vw;
+    
+    top: 0rem;
+    left: 0rem;
+    margin: 1rem;
+}
+
+#goose{
+    font-size: 4vw;
+    text-align: center;
+    color: rgb(30, 27, 28);
+}
+
+
+
+
+.links-container{
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(197, 195, 195)
+    font-size; 1rem;
+}
+
+nav a:hover{
+    background-color: rgb(161, 159, 159)
+}
+
+
+
+nav svg{
+    fill: rgb(197, 195, 195);
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .links-container{
+        
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: rgb(30, 27, 28);
+        transition: 0.75s ease-out;
+    }
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    } 
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+
+}
+
+
+
+        
+
+
+
+
+#pg1{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+    padding: 0.25rem;
+    font-size: 5.5vw;
+    text-align: center;
+    border:0.25rem solid rgb(174, 35, 45) ;
+    color: rgb(197, 195, 195);
+    
+    
+}
+
+#ussopp{
+    display: flex;
+    gap: 3vw;
+    margin: 3vw;
+   
+    
+
+
+}
+
+#army{
+    font-size: 4vw;
+}
+
+#force{
+    font-size: 3vw;
+}
+
+#sheild{
+    font-size: 4vw;
+}
+
+#scar{
+    font-size: 3vw;
+}
+
+#yoga{
+    max-width: 53vw;
+    height: auto;
+}
+
+#caresha{
+    background-color: rgb(174, 35, 45);
+    text-align: center;
+    color: rgb(30, 27, 28);
+    
+}
+
+#uzi{
+    font-size: 5vw;
+}
+
+#vert{
+    text-align: left;
+    font-size: 4vw;
+    color: rgb(30, 27, 28);
+    margin: 3vw;
+
+}
+
+#blind{
+    background-color: rgb(30, 27, 28);
+    color: rgb(197, 195, 195);
+    border:0.25rem solid rgb(197, 195, 195) ;
+    
+    
+}
+
+#pochita{
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+#chain{
+    text-align: center;
+    font-size: 4vw;
+}
+
+#rosta{
+    display: flex;
+    margin: 2vw;
+    
+}
+
+#kickbox{
+    max-width: 54vw;
+    height: auto;
+
+}
+
+#btn5{
+    float: right;
+     font-size: 3vw;
+    background-color: rgb(174, 35, 45);
+    color: rgb(197, 195, 195);
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+body{
+    background-color: rgb(30, 27, 28);
+}
+
+
+
+
+#dog{
+    color: rgb(197, 195, 195);
+    font-size: 5vw;
+    text-align: center;
+    border: 0.25rem solid rgb(197, 195, 195);
+    
+}
+
+
+
+
+#btn1{
+    display: block;
+    margin: 0 auto;
+    padding: 1vw 1.5vw;
+    font-size: 3vw;
+    background-color: rgb(174, 35, 45);
+    color: rgb(197, 195, 195);
+    border: none;
+    cursor: pointer;
+}
+
+#products{
+    color: rgb(30, 27, 28);
+    font-size: 3vw;
+    text-align: center;
+    background-color: rgb(174, 35, 45);
+   
+}
+
+#PI{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .item img{
+    max-width: 32vw;
+    height: auto;
+ }
+
+#btn2{
+    color: rgb(197, 195, 195);
+    font-size: 2vw;
+     background-color: rgb(174, 35, 45);
+    border: none;
+      cursor: pointer;
+}
+
+#btn3{
+    color: rgb(197, 195, 195);
+    font-size: 2vw;
+     background-color: rgb(174, 35, 45);
+    border: none;
+      cursor: pointer;
+}
+
+#btn4{
+    color: rgb(197, 195, 195);
+    font-size: 2vw;
+    background-color: rgb(174, 35, 45);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+#beans{
+   color: rgb(197, 195, 195);
+    text-align: center;
+    background-color: rgb(174, 35, 45);
+}
+
+#elf{
+    font-size: 5vw;
+    text-align: center;
+
+}
+
+#deer{
+    font-size: 3vw;
+    margin: 5vw;
+}
+
+#marlon{
+    font-size: 3vw;
+    margin: 5vw;
+}
+
+#yoggaa{
+    display: flex;
+    color: rgb(30, 27, 28);
+    text-align: center;
+    background-color: rgb(197, 195, 195);
+    font-size: 2vw;
+
+}
+
+
+
+
+#img123{
+    max-width: 50vw;
+    height: auto;
+    margin: 2vw;
+}
+
+#btn999{
+    color: rgb(197, 195, 195);
+    font-size: 2vw;
+    background-color: rgb(174, 35, 45);
+    border: none;
+    cursor: pointer;
+
+
+}
+
+#noodle{
+    color: rgb(197, 195, 195);
+    text-align: center;
+
+}
+
+#grape{
+    font-size: 4vw;
+    background-color: rgb(174, 35, 45);
+}
+
+#apple{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+#apple textarea{
+    height: auto;
+    min-height: 100px;
+}
+
+
+#diamond{
+    color: rgb(197, 195, 195);
+    text-align: center;
+    font-size: 5vw;
+}
+
+#silver{
+    color: rgb(197, 195, 195);
+    text-align: center;
+    font-size: 2.75vw;
+}
+
+#ruby{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 3vw;
+    margin-bottom: 3vw;
+}
+
+#gold{
+    width: 53vw;
+    height: auto;
+}
+
+.text-content{
+    flex: 1;
+}
+
+#plat{
+    color: rgb(197, 195, 195);
+    text-align: center;
+    font-size: 5vw;
+    background-color: rgb(174, 35, 45);
+}
+
+#opium{
+    color: rgb(197, 195, 195);
+    font-size: 4vw;
+    text-align: center;
+    
+}
+
+#cypress{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: space-evenly;
+    
+}
+
+#cypress li a{
+    color: rgb(197, 195, 195);
+    font-size: 4vw;
+}
+
+#cedar{
+    background-color: rgb(174, 35, 45);
+    
+}
+
+#birch{
+    color: rgb(197, 195, 195);
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+#pine{
+    color: rgb(197, 195, 195);
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+#life{
+    position: relative;
+    min-height: 40px;
+}
+
+#bucket{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(197, 195, 195);
+    font-size: 2vw;
+}
+
+#rug{
+    font-size: 5vw;
+    color: rgb(30, 27, 28);
+    width: 100vw;
+    text-align: center;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+#window{
+    width: 100%;
+    text-align: center;
+
+}
+#shrug, #humming, #xxx{
+    flex: 1;
+    min-width: 200px;
+
+}
+#search li{
+    font-size: 2vw;
+    color: rgb(197, 195, 195);
+    list-style-type: none;
+}
+#search li a{
+    color: rgb(197, 195, 195);
+    text-decoration: none;
+}
+#juice{
+    color: rgb(197, 195, 195);
+}
+#bamboo{
+    color: rgb(197, 195, 195);
+}
+#shrub{
+    color: rgb(197, 195, 195);
+}
+
+#btn56{
+    color: rgb(197, 195, 195);
+    font-size: 2vw;
+    background-color: rgb(174, 35, 45);
+    border: none;
+    cursor: pointer;
+}
+
+#glozelle{
+     color: rgb(197, 195, 195);
+    font-size: 2vw;
+    background-color: rgb(174, 35, 45);
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    
+    
+}
+
+#rotel{
+    color: rgb(197, 195, 195);
+    font-size: 2vw;
+    background-color: rgb(174, 35, 45);
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+    
+}
+
+
+#fusion{
+    padding: 2vw;
+    
+}
+
+#cart{
+    color: rgb(197, 195, 195);
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    font-size: 2vw;
+}
+
+#passion{
+    font-size: 3.5vw;
+    color: rgb(174, 35, 45);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+#cooks{
+    color: rgb(197, 195, 195);
+}
